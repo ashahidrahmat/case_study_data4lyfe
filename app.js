@@ -10,7 +10,7 @@ const
 
 const 
     PORT = 8080,
-    ISDEV = true;
+    ISDEV = false;
 
 nextApp = next({dir: './', dev:ISDEV});
 

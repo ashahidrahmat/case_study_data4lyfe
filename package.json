@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node --inspect=9229 app.js",
     "lint": "next lint"
   },
   "dependencies": {
