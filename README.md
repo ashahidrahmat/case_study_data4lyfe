@@ -6,9 +6,11 @@ Format of csv to be uploaded must be the same as the one provided in the sample 
 
 Requires Node 12 ^
 Use npm install to install prerequisites
+
+Then run the following to start the server
+
 ```bash
-npm install
+node app.js
 ```
-Then run node app.js to start the server
 
 Enter browser and type in http://localhost:8080/ to visit the challenge
