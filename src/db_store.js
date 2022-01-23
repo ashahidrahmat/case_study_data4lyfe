@@ -101,7 +101,7 @@ const getAllAppointments = async ()=>{
 const createAppointment = async (patientId,doctorId,date)=>{
     //get latest appointment based on id
     let latestId = await db.get('select id from appointments order by id desc limit 1');
-    //assume the id is hexadecimal which is not realistic but easier to add on
+    //Hexadecimal order since dun know if it goes a9 -> a10 or a9 -> B1 and either order is limited
     let newId = (parseInt(latestId.id, 16) + 1).toString(16).toUpperCase();
     //add new 
     await db.run('insert into appointments(id,patient_id,doctor_id,dateTime) values (?,?,?,?)',newId,patientId,doctorId,date);

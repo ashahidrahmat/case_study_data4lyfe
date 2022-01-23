@@ -1,7 +1,7 @@
  
 Assumptions made:
 Format of csv to be uploaded must be the same as the one provided in the sample data in the challenge email, including the date time format
-
+The Appointment ID goes in Hexadecimal order as couldn't decide if the order is A9 -> B1 or A9-A10 so made it hexadecimal instead since that made sense to me.
 ## Getting Started
 
 Requires Node 12 ^
